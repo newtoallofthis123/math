@@ -15,19 +15,19 @@ Probability and odds are also used interchangeably, but they are not the same th
 
 Probability is the likelihood of an event occurring divided by the number of possible outcomes. Odds are the likelihood of an event occurring divided by the likelihood of an event not occurring.
 
-Matheatically, the relationship between probability and odds is:
+Mathematically, the relationship between probability and odds is:
 
-$ Odds = \frac{Probability}{1 - Probability} $
+$Odds = \frac{Probability}{1 - Probability}$
 
 or
 
-$ Probability = \frac{Odds}{1 + Odds} $
+$Probability = \frac{Odds}{1 + Odds}$
 
 So, that means
 
-$ Probability = \frac{in favor}{total} $
+$Probability = \frac{in favor}{total}$
 
-$ Odds = \frac{in favor}{against} $
+$Odds = \frac{in favor}{against}$
 
 So, for example, let's say that the probability of an event occurring is $\frac{1}{3}$. Then, the odds of that event occurring are $\frac{1}{2}$.
 Since the probability of an event occurring is $\frac{1}{3}$, that means that the probability of an event not occurring is $\frac{2}{3}$. So, the odds of an event not occurring are $\frac{2}{1}$.
@@ -52,29 +52,29 @@ The sample space is the set of all possible outcomes of an experiment. It is usu
 
 An event is a subset of the sample space. It is usually denoted by the capital letter $E$.
 
-### Probability
+### Probability Definition
 
 The probability of an event is the number of elements in the event divided by the number of elements in the sample space.
 
-$ P(E) = \frac{|E|}{|\Omega|} $
+$P(E) = \frac{|E|}{|\Omega|}$
 
 ### Probability Axioms
 
 The probability of an event is always between 0 and 1.
 
-$ 0 \leq P(E) \leq 1 $
+$0 \leq P(E) \leq 1$
 
 The probability of the sample space is 1.
 
-$ P(\Omega) = 1 $
+$P(\Omega) = 1$
 
 The probability of the union of two events is the sum of the probabilities of the events minus the probability of the intersection of the events.
 
-$ P(E \cup F) = P(E) + P(F) - P(E \cap F) $
+$P(E \cup F) = P(E) + P(F) - P(E \cap F)$
 
 The probability of the complement of an event is 1 minus the probability of the event.
 
-$ P(E^c) = 1 - P(E) $
+$P(E^c) = 1 - P(E)$
 
 ## Things in Probability
 
@@ -82,14 +82,14 @@ $ P(E^c) = 1 - P(E) $
 
 The joint probability of two events is the probability of the intersection of the two events.
 
-$ P(E \cap F) $
+$P(E \cap F)$
 
 So, for example, let's say that we have a bag with 3 red balls and 2 blue balls. We pick a ball at random. What is the probability that the ball is red and blue?
 
-$ P(Red \cap Blue) = \frac{3}{5} \times \frac{2}{4} = \frac{3}{10} $
+$P(Red \cap Blue) = \frac{3}{5} \times \frac{2}{4} = \frac{3}{10}$
 
 Hence, boardly speaking, the probability of two events occurring is the probability of the first event occurring times the probability of the second event occurring.
 
 Matheatically, the relationship between joint probability and probability is:
 
-$ P(E \cap F) = P(E) \times P(F) $
+$P(E \cap F) = P(E) \times P(F)$
