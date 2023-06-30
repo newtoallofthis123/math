@@ -90,6 +90,61 @@ $P(Red \cap Blue) = \frac{3}{5} \times \frac{2}{4} = \frac{3}{10}$
 
 Hence, boardly speaking, the probability of two events occurring is the probability of the first event occurring times the probability of the second event occurring.
 
-Matheatically, the relationship between joint probability and probability is:
+Mathematically, the relationship between joint probability and probability is:
 
 $P(E \cap F) = P(E) \times P(F)$
+
+### Union Probability
+
+The union probability of two events is the probability of the union of the two events.
+
+$P(E \cup F)$
+
+So, for example, let's say that we have a bag with 3 red balls and 2 blue balls. We pick a ball at random. What is the probability that the ball is red or blue?
+
+$P(Red \cup Blue) = \frac{3}{5} + \frac{2}{5} - \frac{3}{10} = \frac{7}{10}$
+
+Hence, boardly speaking, the probability of two events occurring is the probability of the first event occurring plus the probability of the second event occurring minus the probability of the intersection of the two events occurring.
+
+## Conditional Probability
+
+The conditional probability of an event is the probability of the event given that another event has occurred.
+
+It is usually denoted by $P(E|F)$.
+
+So, for example, a study found that 70% of people who buy a car also buy a house. So, the probability of buying a house given that you bought a car is 70%.
+
+$P(House|Car) = 0.7$
+
+So, boardly speaking, the conditional probability of an event is the probability of the intersection of the two events divided by the probability of the second event.
+
+One more important thing to note is that P(E|F) is not the same as P(F|E). So, for example, the probability of buying a car given that you bought a house is not the same as the probability of buying a house given that you bought a car.
+
+Hence, mathematically, the relationship between conditional probability and joint probability is:
+
+$P(E|F) = \frac{P(E \cap F)}{P(F)}$
+
+Hence, we can also write
+
+$P(E \cap F) = P(E|F) \times P(F)$
+
+$=> P(F|E) \times P(E) = P(E|F) \times P(F)$
+
+### Joint Probability in Terms of Conditional Probability
+
+So, now let's say that we have two events E and F.
+Event E is the event that a person has a disease.
+Event F is the event that a person tests positive for the disease.
+
+So, we want to find the probability of the person having the disease **AND** testing positive for the disease.
+
+$P(E \cap F) = P(E|F) \times P(F)$
+
+So, $P(E|F)$ is the probability of the person having the disease given that the person tested positive for the disease.
+$P(F)$ is the probability of the person testing positive for the disease.
+
+Similarly, let's say we want the probability of the person having the disease **OR** testing positive for the disease.
+
+$P(E \cup F) = P(E) + P(F) - P(E \cap F)$
+
+So, in english, that means that the probability of the person having the disease **OR** testing positive for the disease is the probability of the person having the disease plus the probability of the person testing positive for the disease minus the probability of the person having the disease **AND** testing positive for the disease.
