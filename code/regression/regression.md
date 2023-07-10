@@ -73,8 +73,19 @@ print(residuals)
 We calculate the squares of the residuals because the residuals can be positive or negative and if we don't square them, the positive and negative values will cancel each other out.
 
 Positive and negative values also don't do well with calculus.
+This is called SS(mean)
+Now, the variation around the mean is 
 
+$Var(mean) = \frac{SS(mean)}{n}$
 
+Similarly, for fit, same can be calculated.
+Now,
+
+$$
+R^2 = \frac{Var(mean)-Var(fit)}{Var(mean)}
+$$
+
+We can say that $R^2$ explains the percentage of variation.
 ```python
 # Calculating the sum of squared residuals
 
@@ -96,8 +107,32 @@ for point in df:
 print(residuals)
 ```
 
-    [2.35, 2.68, 0.04, 8.83, 0.02, 0.48, 2.18, 1.84, 14.53, 0.0]
+```
+[2.35, 2.68, 0.04, 8.83, 0.02, 0.48, 2.18, 1.84, 14.53, 0.0]
+```
     
+These residuals are better then there are more number of unknowns. But, if there are more number of unknowns, then the residuals will be less and hence, we will have more $R^2$.
+
+### P value of $R^2$
+
+We use p value to determine if a result is statistically significant. If the p value is less than 0.05, then the result is statistically significant.
+
+The p value for $R^2$ is calculated using the F distribution. The F distribution is a ratio of two chi squared distributions. The chi squared distribution is a sum of squared normal distributions.
+
+Hence, the final formula for $R^2$ is:
+
+$$
+R^2 = \frac{Var(mean)-Var(fit) / (p_{fit}- p_{mean})}{Var(mean) / (n - p_{mean})}
+$$
+
+Here,
+$p_{fit}$ is the number of unknowns in the fit and $p_{mean}$ is the number of unknowns in the mean.
+
+Hence, for example, if we have 2 unknowns in the fit and 1 unknown in the mean, then the formula for $R^2$ is:
+
+$$
+R^2 = \frac{Var(mean)-Var(fit) / (2-1)}{Var(mean) / (n - 1)}
+$$
 
 ## Gradient Descent
 
@@ -108,7 +143,6 @@ Testing out the gradient descent for
 $$
 y = (x-3)^2 + 4
 $$
-
 
 ```python
 import random
@@ -229,10 +263,3 @@ for i in range(epochs):
 print("y = {0}x + {1}".format(m, b))
 ```
 
-    y = 1.9420423045453836x + 4.729345887887508
-    
-
-
-```python
-
-```
