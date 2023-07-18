@@ -166,3 +166,6 @@ cython_debug/
 # VSCode config
 
 /.vscode
+/learning/sentiment_analysis/aclImdb
+/learning/sentiment_analysis/aclImdb_v1.tar.gz
+/learning/tensorflow/dogs_cats
